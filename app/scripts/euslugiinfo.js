@@ -2,7 +2,7 @@
 //var lib = require('./components/components');
 var scope = window;
 
-var polymer = scope.Polymer('euslugiinfo', {
+scope.Polymer('euslugiinfo', {
   /**
    * The `noevent` event is not actually fired from here,
    * we document it as an example of documenting events.
@@ -41,5 +41,3 @@ var polymer = scope.Polymer('euslugiinfo', {
   }
 
 });
-
-return polymer;
