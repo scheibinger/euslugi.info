@@ -554,7 +554,10 @@ var sizeOf = function (stream, title) {
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', ['default'], function () {
-  return gulp.src("./_dist/**/*")
-    .pipe(deploy())
-});
+
+(function (scope) {
+  gulp.task('deploy', function () {
+    return gulp.src(["_dist/**/*.*","_dist/CNAME"])
+      .pipe(deploy())
+  });
+})(this);
